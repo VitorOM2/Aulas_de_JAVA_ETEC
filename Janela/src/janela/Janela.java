@@ -17,6 +17,7 @@ public class Janela extends JFrame{
         setIconImage(icone.getImage());
         
         Container tela = getContentPane();
+        setLayout(null);
         tela.setBackground(new Color(128,125,150));//muda a cor da tela
         
         //Cria o conteudo dos rótulos
