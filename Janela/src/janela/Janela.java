@@ -32,6 +32,16 @@ public class Janela extends JFrame{
         rotulo7 = new JLabel ("CEP:");
         rotulo8 = new JLabel ("Estado:");
         
+        //Cria a caixa de texto e o tamanho
+        caixa1 = new JTextField(50);
+        caixa2 = new JTextField(3);
+        caixa3 = new JTextField(14);
+        caixa4 = new JTextField(10);
+        caixa5 = new JTextField(11);
+        caixa6 = new JTextField(50);
+        caixa7 = new JTextField(8);
+        caixa8 = new JTextField(20);
+        
         //Define as cordenadas dos rótulos
         rotulo1.setBounds(50,20,80,20);
         rotulo2.setBounds(50,60,80,20);
@@ -41,6 +51,16 @@ public class Janela extends JFrame{
         rotulo6.setBounds(50,220,80,20);
         rotulo7.setBounds(50,260,80,20);
         rotulo8.setBounds(50,300,80,20);
+        
+        //Define a posição das caixas de textos
+        caixa1.setBounds (140,20,200,20);
+        caixa2.setBounds (140,60,20,20);
+        caixa3.setBounds (140,100,80,20);
+        caixa4.setBounds (140,140,80,20);
+        caixa5.setBounds (140,180,80,20);
+        caixa6.setBounds (140,220,80,20);
+        caixa7.setBounds (140,260,80,20);
+        caixa8.setBounds (140,300,80,20);
         
         //Define a cor dos rótulos
         rotulo1.setForeground(Color.red);
@@ -71,6 +91,16 @@ public class Janela extends JFrame{
         tela.add(rotulo6);
         tela.add(rotulo7);
         tela.add(rotulo8);
+        
+        //Apresenta as caixas de textos na tela
+        tela.add(caixa1);
+        tela.add(caixa2);
+        tela.add(caixa3);
+        tela.add(caixa4);
+        tela.add(caixa5);
+        tela.add(caixa6);
+        tela.add(caixa7);
+        tela.add(caixa8);
         
         //Configurações do tamanho da tela
         setSize(400,250);
