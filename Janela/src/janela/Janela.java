@@ -63,20 +63,20 @@ public class Janela extends JFrame{
         caixa8.setBounds (140,300,80,20);
         
         //Define a cor dos rótulos
-        rotulo1.setForeground(Color.red);
-        rotulo2.setForeground(Color.blue);
-        rotulo3.setForeground(new Color (190,152,142));
-        rotulo4.setForeground(new Color (201,200,100));
+        rotulo1.setForeground(Color.darkGray);
+        rotulo2.setForeground(Color.darkGray);
+        rotulo3.setForeground(Color.darkGray);
+        rotulo4.setForeground(Color.darkGray);
         rotulo5.setForeground(Color.darkGray);
         rotulo6.setForeground(Color.darkGray);
         rotulo7.setForeground(Color.darkGray);
         rotulo8.setForeground(Color.darkGray);
         
         //Define a fonte dos rótulos
-        rotulo1.setFont(new Font ("Arial",Font.BOLD,14));
-        rotulo2.setFont(new Font ("Comic Sans MS",Font.BOLD,16));
-        rotulo3.setFont(new Font ("Courier New",Font.BOLD,16));
-        rotulo4.setFont(new Font ("Times New Roman",Font.BOLD,20));
+        rotulo1.setFont(new Font ("Arial",Font.BOLD,16));
+        rotulo2.setFont(new Font ("Arial",Font.BOLD,16));
+        rotulo3.setFont(new Font ("Arial",Font.BOLD,16));
+        rotulo4.setFont(new Font ("Arial",Font.BOLD,16));
         rotulo5.setFont(new Font ("Arial",Font.BOLD,16));
         rotulo6.setFont(new Font ("Arial",Font.BOLD,16));
         rotulo7.setFont(new Font ("Arial",Font.BOLD,16));
