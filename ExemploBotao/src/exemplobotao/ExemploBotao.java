@@ -24,6 +24,11 @@ public class ExemploBotao extends JFrame
         botao3 = new JButton ("Próximo >>");
         botao4 = new JButton ("Sair");
         
+        botao1.setMnemonic(KeyEvent.VK_P);
+        botao2.setMnemonic(KeyEvent.VK_V);
+        botao3.setMnemonic(KeyEvent.VK_X);
+        botao4.setMnemonic(KeyEvent.VK_S);
+        
         botao1.setBounds(50,20,100,20);
         botao2.setBounds(50,60,100,20);
         botao3.setBounds(50,100,100,20);
