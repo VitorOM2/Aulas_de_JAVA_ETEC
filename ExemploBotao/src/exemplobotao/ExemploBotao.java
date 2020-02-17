@@ -45,6 +45,12 @@ public class ExemploBotao extends JFrame
         botao3.setBackground(Color.blue);
         botao4.setBackground(Color.white);*/
         
+        //Define a cor da fonte do botão
+        botao1.setForeground(Color.blue);
+        botao2.setForeground(Color.green);
+        botao3.setForeground(Color.red);
+        botao4.setForeground(Color.pink);
+        
         //Adiciona os botões na tela
         tela.add(botao1);
         tela.add(botao2);
