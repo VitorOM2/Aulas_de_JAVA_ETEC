@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 
 /* @author Vitor */
+
+//Exemplo de botões com imagens
 public class ExemploBotao1 extends JFrame {
 
     JButton botao1,botao2,botao3;
