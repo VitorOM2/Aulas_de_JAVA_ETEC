@@ -32,6 +32,9 @@ public class ExemploBotao1 extends JFrame {
         botao2.setBounds(50,60,100,20);
         botao3.setBounds(50,100,100,20);
         
+        //Adiciona cor para o botão
+        botao1.setBackground(Color.yellow);
+        
         //Adiciona os botões na tela
         tela.add (botao1);
         tela.add (botao2);
