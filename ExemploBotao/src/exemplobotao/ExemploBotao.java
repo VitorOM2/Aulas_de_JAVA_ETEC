@@ -28,6 +28,11 @@ public class ExemploBotao extends JFrame
         botao3.setBounds(50,100,100,20);
         botao4.setBounds(50,140,100,20);
         
+        botao1.setBackground(Color.yellow);
+        botao2.setBackground(Color.red);
+        botao3.setBackground(Color.blue);
+        botao4.setBackground(Color.white);
+        
         tela.add(botao1);
         tela.add(botao2);
         tela.add(botao3);
