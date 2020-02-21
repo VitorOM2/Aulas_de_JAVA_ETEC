@@ -10,9 +10,11 @@ import java.text.*;
  */
 public class Janela extends JFrame{
     JLabel rotulo1,rotulo2,rotulo3,rotulo4,rotulo5,rotulo6,rotulo7,rotulo8,rotulo9;
+    JFormattedTextField cep,tel,cpf,data;
     JTextField caixa1,caixa2,caixa3,caixa4,caixa5,caixa6,caixa7,caixa8;
     JButton botao1,botao2,botao3;
     ImageIcon icone1;
+    MaskFormatter mascaracep,mascaratel,mascaracpf,mascaradata;
 
     public Janela (){
             
@@ -81,6 +83,12 @@ public class Janela extends JFrame{
         caixa7.setBounds (140,290,80,20);
         caixa8.setBounds (140,330,80,20);
         
+        //Posição das mascaras
+        cep.setBounds(140,290,80,20);
+        tel.setBounds(140,130,80,20);
+        cpf.setBounds(140,210,80,20);
+        data.setBounds(140,90,20,20);
+        
         //Define a cor dos rótulos
         rotulo1.setForeground(Color.darkGray);
         rotulo2.setForeground(Color.darkGray);
@@ -112,6 +120,9 @@ public class Janela extends JFrame{
         caixa7.setBackground(Color.white);
         caixa8.setBackground(Color.white);
         
+        //Define a cor da fonte do botão
+        botao1.setForeground(Color.blue);
+        
         //Define a fonte dos rótulos
         rotulo1.setFont(new Font ("Arial",Font.BOLD,16));
         rotulo2.setFont(new Font ("Arial",Font.BOLD,16));
@@ -122,6 +133,27 @@ public class Janela extends JFrame{
         rotulo7.setFont(new Font ("Arial",Font.BOLD,16));
         rotulo8.setFont(new Font ("Arial",Font.BOLD,16));
         rotulo9.setFont(new Font ("Arial",Font.BOLD,18));
+        
+                //Verifica as caixas
+        try
+        {
+            mascaracep = new MaskFormatter("#####-###");
+            mascaratel = new MaskFormatter ("(##)#####-####");
+            mascaracpf = new MaskFormatter ("#########-##");
+            mascaradata = new MaskFormatter ("##/##/####");
+            
+            mascaracep.setPlaceholderCharacter('_');
+            mascaratel.setPlaceholderCharacter('_');
+            mascaracpf.setPlaceholderCharacter('_');
+            mascaradata.setPlaceholderCharacter('_');
+            
+        }
+        catch(ParseException excp){}
+        
+        cep = new JFormattedTextField(mascaracep);
+        tel = new JFormattedTextField(mascaratel);
+        cpf = new JFormattedTextField(mascaracpf);
+        data = new JFormattedTextField(mascaradata);
         
         //Apresenta os rótulos na tela
         tela.add(rotulo1);
@@ -143,6 +175,12 @@ public class Janela extends JFrame{
         tela.add(caixa6);
         tela.add(caixa7);
         tela.add(caixa8);
+        
+        //Apresenta as mascaras na tela
+        tela.add (cep);
+        tela.add (tel);
+        tela.add (cpf);
+        tela.add (data);
         
         //Adiciona os botões na tela
         tela.add(botao1);
