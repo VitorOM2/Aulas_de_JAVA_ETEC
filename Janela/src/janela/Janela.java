@@ -19,12 +19,15 @@ public class Janela extends JFrame{
         super("Janela Principal");
         //Define a Imagem da página
         ImageIcon icone;
-        icone = new ImageIcon ("teste.gif");
+        icone = new ImageIcon ("user.png");
         setIconImage(icone.getImage());
         
         Container tela = getContentPane();
         setLayout(null);
         tela.setBackground(new Color(128,125,150));//muda a cor da tela
+        
+        //imagem para os botões
+        icone1 = new ImageIcon ("enviar.png");
         
         //Cria o conteudo dos rótulos
         rotulo1 = new JLabel ("Nome");
