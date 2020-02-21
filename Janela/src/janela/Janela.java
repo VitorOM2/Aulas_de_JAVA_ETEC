@@ -11,8 +11,9 @@ import java.text.*;
 public class Janela extends JFrame{
     JLabel rotulo1,rotulo2,rotulo3,rotulo4,rotulo5,rotulo6,rotulo7,rotulo8;
     JTextField caixa1,caixa2,caixa3,caixa4,caixa5,caixa6,caixa7,caixa8;
+    JButton botao1,botao2,botao3;
+    ImageIcon icone1;
 
-    
     public Janela (){
             
         super("Janela Principal");
@@ -35,6 +36,11 @@ public class Janela extends JFrame{
         rotulo7 = new JLabel ("CEP:");
         rotulo8 = new JLabel ("Estado:");
         
+        //Cria os botões
+        botao1 = new JButton ("Enviar");
+        botao2 = new JButton ("Enviar",icone1);
+        botao3 = new JButton (icone1);
+        
         //Cria a caixa de texto e o tamanho
         caixa1 = new JTextField(50);
         caixa2 = new JTextField(3);
@@ -54,6 +60,11 @@ public class Janela extends JFrame{
         rotulo6.setBounds(50,220,80,20);
         rotulo7.setBounds(50,260,80,20);
         rotulo8.setBounds(50,300,80,20);
+        
+        //Define as posições dos botões
+        botao1.setBounds(50,380,100,20);
+        botao2.setBounds(250,380,100,20);
+        botao3.setBounds(450,380,100,20);
         
         //Define a posição das caixas de textos
         caixa1.setBounds (140,20,200,20);
@@ -104,6 +115,11 @@ public class Janela extends JFrame{
         tela.add(caixa6);
         tela.add(caixa7);
         tela.add(caixa8);
+        
+        //Adiciona os botões na tela
+        tela.add(botao1);
+        tela.add(botao2);
+        tela.add(botao3);
         
         //Configurações do tamanho da tela
         setSize(400,250);
