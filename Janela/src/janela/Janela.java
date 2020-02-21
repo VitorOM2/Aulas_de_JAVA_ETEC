@@ -92,6 +92,16 @@ public class Janela extends JFrame{
         rotulo8.setForeground(Color.darkGray);
         rotulo9.setForeground(Color.BLACK);
         
+        //Define a cor das letras nas caixas
+        caixa1.setForeground(Color.black);
+        caixa2.setForeground(Color.black);
+        caixa3.setForeground(Color.black);
+        caixa4.setForeground(Color.black);
+        caixa5.setForeground(Color.black);
+        caixa6.setForeground(Color.black);
+        caixa7.setForeground(Color.black);
+        caixa8.setForeground(Color.black);
+        
         //Define a fonte dos rótulos
         rotulo1.setFont(new Font ("Arial",Font.BOLD,16));
         rotulo2.setFont(new Font ("Arial",Font.BOLD,16));
