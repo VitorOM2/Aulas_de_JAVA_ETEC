@@ -1,7 +1,10 @@
 package janela;
 
 import javax.swing.*;
+import javax.swing.text.*;
 import java.awt.*;
+import java.awt.event.*;
+import java.text.*;
 
 /*@author Vitor
  */
