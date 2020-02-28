@@ -143,6 +143,15 @@ public class Janela extends JFrame{
         rotulo7.setFont(new Font ("Arial",Font.BOLD,16));
         rotulo8.setFont(new Font ("Arial",Font.BOLD,16));
         rotulo9.setFont(new Font ("Arial",Font.BOLD,18));
+        
+                //Adiciona eventos para o botão        
+        botao3.addActionListener(
+                new ActionListener(){
+                    public void actionPerformed(ActionEvent e){
+                        System.exit(0);
+                    }
+                }
+        );
        
         //Apresenta os rótulos na tela
         tela.add(rotulo1);
