@@ -12,7 +12,7 @@ public class Janela extends JFrame{
     JLabel rotulo1,rotulo2,rotulo3,rotulo4,rotulo5,rotulo6,rotulo7,rotulo8,rotulo9;
     JTextField caixa1,caixa2,caixa3,caixa4,caixa5,caixa6,caixa7,caixa8;
     JButton botao1,botao2,botao3;
-    ImageIcon icone1;
+    ImageIcon icone1,icone2;
     MaskFormatter mascaracep,mascaratel,mascaracel,mascaracpf,mascaradata;
 
     public Janela (){
@@ -45,6 +45,7 @@ public class Janela extends JFrame{
         catch(ParseException excp){}
         //imagem para os botões
         icone1 = new ImageIcon ("enviar.png");
+        icone2 = new ImageIcon ("sair.png");
         
         //Cria o conteudo dos rótulos
         rotulo1 = new JLabel ("Nome");
@@ -60,7 +61,7 @@ public class Janela extends JFrame{
         //Cria os botões
         botao1 = new JButton ("Enviar");
         botao2 = new JButton ("Enviar",icone1);
-        botao3 = new JButton (icone1);
+        botao3 = new JButton (icone2);
         
         //Cria a caixa de texto e o tamanho
         caixa1 = new JTextField(50);
