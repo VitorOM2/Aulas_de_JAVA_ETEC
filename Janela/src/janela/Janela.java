@@ -43,7 +43,12 @@ public class Janela extends JFrame{
             
         }
         catch(ParseException excp){}
+        
+        //----------ADICIONAR IMAGENS PARA OS BOTÕES----------
 
+        icone1 = new ImageIcon ("enviar.png");
+        icone2 = new ImageIcon ("sair.png");
+        
         //---------------INSTANCIAÇÃO DOS COMPONENTES---------------
         
         //rótulos
@@ -60,7 +65,7 @@ public class Janela extends JFrame{
         //botões
         botao1 = new JButton ("Enviar");
         botao2 = new JButton ("Enviar",icone1);
-        botao3 = new JButton (icone2);
+        botao3 = new JButton ("Sair",icone2);
         
         //campos
         caixa1 = new JTextField(50);
@@ -147,9 +152,7 @@ public class Janela extends JFrame{
         rotulo8.setFont(new Font ("Arial",Font.BOLD,16));
         rotulo9.setFont(new Font ("Arial",Font.BOLD,18));
         
-        //imagem para os botões
-        icone1 = new ImageIcon ("enviar.png");
-        icone2 = new ImageIcon ("sair.png");
+
         
         //---------------ADICIONAR EVENTOS---------------
         
