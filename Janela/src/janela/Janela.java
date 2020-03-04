@@ -43,11 +43,10 @@ public class Janela extends JFrame{
             
         }
         catch(ParseException excp){}
-        //imagem para os botões
-        icone1 = new ImageIcon ("enviar.png");
-        icone2 = new ImageIcon ("sair.png");
+
+        //---------------INSTANCIAÇÃO DOS COMPONENTES---------------
         
-        //Cria o conteudo dos rótulos
+        //rótulos
         rotulo1 = new JLabel ("Nome");
         rotulo2 = new JLabel ("data de nascimento");
         rotulo3 = new JLabel ("Telefone");
@@ -58,20 +57,22 @@ public class Janela extends JFrame{
         rotulo8 = new JLabel ("Estado:");
         rotulo9 = new JLabel ("Cadastro Clientes");
         
-        //Cria os botões
+        //botões
         botao1 = new JButton ("Enviar");
         botao2 = new JButton ("Enviar",icone1);
         botao3 = new JButton (icone2);
         
-        //Cria a caixa de texto e o tamanho
+        //campos
         caixa1 = new JTextField(50);
         caixa2 = new JFormattedTextField(mascaradata);
         caixa3 = new JFormattedTextField(mascaratel);
         caixa4 = new JFormattedTextField(mascaracel);
         caixa5 = new JFormattedTextField(mascaracpf);
         caixa6 = new JTextField(50);
-        caixa7 = new JFormattedTextField(mascaracep);;
+        caixa7 = new JFormattedTextField(mascaracep);
         caixa8 = new JTextField(20);
+        
+        //---------------POSIÇÕES E TAMANHOS---------------
         
         //Define as cordenadas dos rótulos
         rotulo1.setBounds(50,50,80,20);
@@ -98,6 +99,8 @@ public class Janela extends JFrame{
         caixa6.setBounds (140,250,80,20);
         caixa7.setBounds (140,290,65,20);
         caixa8.setBounds (140,330,80,20);
+        
+        //----------CONFIGURAÇÕES DE APARÊNCIA DOS COMPONENTES----------
         
         //Define a cor dos rótulos
         rotulo1.setForeground(Color.darkGray);
@@ -144,7 +147,12 @@ public class Janela extends JFrame{
         rotulo8.setFont(new Font ("Arial",Font.BOLD,16));
         rotulo9.setFont(new Font ("Arial",Font.BOLD,18));
         
-                //Adiciona eventos para o botão        
+        //imagem para os botões
+        icone1 = new ImageIcon ("enviar.png");
+        icone2 = new ImageIcon ("sair.png");
+        
+        //---------------ADICIONAR EVENTOS---------------
+        
         botao3.addActionListener(
                 new ActionListener(){
                     public void actionPerformed(ActionEvent e){
@@ -153,6 +161,8 @@ public class Janela extends JFrame{
                 }
         );
        
+        //--------------------ADICIONAR COMPONENTES--------------------
+        
         //Apresenta os rótulos na tela
         tela.add(rotulo1);
         tela.add(rotulo2);
@@ -179,7 +189,8 @@ public class Janela extends JFrame{
         tela.add(botao2);
         tela.add(botao3);
         
-        //Configurações do tamanho da tela
+        //----------CONFIGURAÇÕES DO TAMANHO DA TELA---------
+        
         setSize(600,550);
         setVisible(true);
         //setExtendedState(MAXIMIZED_BOTH);// Abre a tela de forma maximizada
